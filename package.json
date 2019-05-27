@@ -1,10 +1,12 @@
 {
   "name": "sim",
   "version": "0.1.0",
+  "main": "server/index.js",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
+    "env": "0.0.2",
     "express": "^4.17.0",
     "hashrouter": "^1.1.1",
     "massive": "^5.10.0",
@@ -13,6 +15,8 @@
     "proxy": "^0.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -37,7 +41,6 @@
     ]
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "devDependencies": {},
   "keywords": [],
   "author": "",
