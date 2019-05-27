@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
   constructor(props) {
@@ -14,6 +15,12 @@ export default class Header extends Component {
         />
 
         <h1>SHELFIE</h1>
+        <NavLink activeClassName="active" exact to="/">
+          Inventory
+        </NavLink>
+        <NavLink activeClassName="active" to="/form">
+          Form
+        </NavLink>
       </div>
     );
   }

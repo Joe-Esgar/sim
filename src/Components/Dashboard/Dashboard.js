@@ -11,6 +11,7 @@ export default class DashBoard extends Component {
     this.getFromDB = this.getFromDB.bind(this);
     this.updateById = this.updateById.bind(this);
     this.deleteById = this.deleteById.bind(this);
+    this.postNew = this.postNew.bind(this);
   }
 
   componentDidMount() {
@@ -37,6 +38,10 @@ export default class DashBoard extends Component {
 
   updateById(id, item) {
     axios.put(`/api/products/${id}`, item).then(this.getFromDB);
+  }
+
+  postNew(item) {
+    axios.post("/api/products", item).then(this.getFromDB);
   }
 
   render() {
